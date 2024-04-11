@@ -28,7 +28,7 @@ public class VehicleManagement{
                     make = str.next();
                     System.out.print("Enter Year of Manufacture: ");
                     yearOfManufacture = val.nextInt();
-                    System.out.print("Enter value: ");
+                    System.out.print("Enter Value: ");
                     value = val.nextDouble();
 
                     Vehicle Car = new Vehicle (regNo, make, yearOfManufacture, value);
@@ -38,7 +38,7 @@ public class VehicleManagement{
                 }
                 case 2 -> {
                     Vehicles.forEach(Vehicle -> {
-                        System.out.print("\nReg No: " + Vehicle.getregNo() + ", make: " + Vehicle.getmake() + ", Year of Manufacture: " + Vehicle.getyearOfManufacture() + ", value: " + Vehicle.getvalue());
+                        System.out.print("\nReg No: " + Vehicle.getregNo() + ", Make: " + Vehicle.getmake() + ", Year of Manufacture: " + Vehicle.getyearOfManufacture() + ", Value: " + Vehicle.getvalue());
                     });
                 }
                 case 3 -> {
